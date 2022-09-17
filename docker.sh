@@ -1,0 +1,1 @@
+docker run --gpus all -it --name yuan_cage --privileged --cap-add=SYS_ADMIN --ipc=host --network=host --ulimit memlock=-1 --ulimit stack=67108864 --device=/dev/infiniband -v $(pwd):/workspace --rm nvcr.io/nvidia/pytorch:22.01-py3 /bin/bash
