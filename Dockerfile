@@ -1,6 +1,6 @@
 FROM nvcr.io/nvidia/pytorch:21.05-py3
-RUN cd ~ && git clone --recursive https://github.com/alpa-projects/alpa.git && cd alpa && pip install -e ".[dev]"
-RUN cd ~/alpa/build_jaxlib && python build/build.py --enable_cuda --dev_install --bazel_options=--override_repository=org_tensorflow=$(pwd)/../third_party/tensorflow-alpa
+#RUN cd ~ && git clone --recursive https://github.com/alpa-projects/alpa.git && cd alpa && pip install -e ".[dev]"
+#RUN cd ~/alpa/build_jaxlib && python build/build.py --enable_cuda --dev_install --bazel_options=--override_repository=org_tensorflow=$(pwd)/../third_party/tensorflow-alpa
 #RUN pip install alpa
 #RUN pip install jaxlib==0.3.5+cuda113.cudnn820 -f https://alpa-projects.github.io/wheels.html
 #RUN pip install pytorch-lightning transformers datasets torchtyping tqdm jieba deepspeed accelerate flash-attn && pip uninstall -y torchtext && pip install -U --pre triton
